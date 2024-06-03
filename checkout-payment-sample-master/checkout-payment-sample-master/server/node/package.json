@@ -5,6 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
+    "build": "npm install",
+
     "debug": "nodemon --inspect=5005 server.js"
   },
   "dependencies": {
