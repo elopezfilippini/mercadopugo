@@ -7,7 +7,7 @@ import InternalProvider from "./components/ContextProvider";
 import { SpinnerCircular } from 'spinners-react';
 
 // REPLACE WITH YOUR PUBLIC KEY AVAILABLE IN: https://developers.mercadopago.com/panel
-initMercadoPago("<PUBLIC_KEY>");
+initMercadoPago("TEST-912c6591-06ff-4d22-b477-6b7cd0618856");
 
 const App = () => {
   const [preferenceId, setPreferenceId] = useState(null);
@@ -16,7 +16,7 @@ const App = () => {
   
   const handleClick = () => {
     setIsLoading(true);
-    fetch("http://localhost:8080/create_preference", {
+    fetch("https://mercadopugo-2.onrender.com/create_preference", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
